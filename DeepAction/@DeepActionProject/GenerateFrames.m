@@ -24,7 +24,7 @@ for i = 1:length(streams)
             feat = Feature(self, vidNames{j}, streams{i}, cams);
    
             if verboseLvl > 1
-                fprintf('Extracting frames: %s stream from video %s: ', streams{i}, vidNames{j})
+                fprintf('Extracting %s frames from video %s: ', streams{i}, vidNames{j})
             end
             feat.GenerateFrames()
             fprintf('\n')
@@ -33,3 +33,4 @@ for i = 1:length(streams)
 end
 
 fprintf('Frames generated in a total time of %0.0f sec.', toc(outerTic))
+end

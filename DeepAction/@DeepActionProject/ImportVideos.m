@@ -67,17 +67,20 @@ for iRow = 1:size(importTable,1)
         destPath = fullfile(destFolder, fileName);
         
         copyfile(importTable{iRow, 2}{1}, destPath, 'f')
-    
-        if verboseLvl > 0
-            fprintf('complete\n')
-        end
+%     
+%         if verboseLvl > 0
+%             fprintf('complete\n')
+%         end
     end
-
-    if verboseLvl > 0
-        ProgressBar(iRow, size(importTable,1))
-    end
+% 
+%     if verboseLvl > 0
+%         ProgressBar(iRow, size(importTable,1))
+%     end
 end
 
+if verboseLvl > 0
+    fprintf('complete\n')
+end
 self.InitializeAnnotations()
 
 end

@@ -19,7 +19,8 @@ classdef DeepActionProject
             self.ProjectName = split{end};
 
             if ~isfolder(self.ProjectPath)
-                fprintf('Warning! Project %s with path %s doesn''t exist!\n', self.ProjectName, self.ProjectPath)
+                msg = sprintf('Warning! Project %s with path %s doesn''t exist!\n', self.ProjectName, self.ProjectPath);
+                warning(msg)
             end
 
             configFilePath = fullfile(self.ProjectPath, 'config.txt');
@@ -358,7 +359,7 @@ classdef DeepActionProject
 
         function InitializeAnnotations(self)
 
-            if self.VerboseLevel > 1
+            if self.VerboseLevel > 0
                 fprintf('  Initializing annotations:  ')
             end
 
@@ -368,7 +369,7 @@ classdef DeepActionProject
                 annot = Annotation(self, vidNames{i});
                 annot.InitializeAnnotation()
     
-                if self.VerboseLevel > 1
+                if self.VerboseLevel > 0
                     ProgressBar(i, length(vidNames))
                 end
             end
