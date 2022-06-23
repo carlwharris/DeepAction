@@ -1,8 +1,6 @@
 # DeepAction
 
-In this repository we provide the code for DeepAction, a MATLAB toolbox for automatic annotation of animal behavior in video. Our toolbox extracts features from video and uses them to train a birectional LSTM classifier, which in addition to predicting behavior, generates a confidence score for the predicted label. These confidence scores allow for the selective review and correction of ambiguous annotations while omitting unnecessary review. 
-
-
+In this repository we provide the code and annotation GUI for DeepAction, a MATLAB toolbox for automatic annotation of animal behavior in video described in the preprint [here](https://www.biorxiv.org/content/10.1101/2022.06.20.496909v1). Our method extracts features from video and uses them to train a birectional LSTM classifier, which in addition to predicting behavior generates a confidence score for the predicted label. These confidence scores allow for the selective review and correction of ambiguous annotations while omitting unnecessary review. 
 
 
 Included in this repository is:
@@ -51,6 +49,7 @@ addpath(genpath(toolbox_folder));
 savepath;
 
 ```
+
 where `toolbox_folder` is the path to the toolbox repository. The command `savepath` saves the current search path so the toolbox doesn't need to be added to the path each time a new MATLAB instance is opened. Don't include it if this is not desirable.
 
 
@@ -158,6 +157,7 @@ In the `documentation` folder, we provide markdown files containing descriptions
 Jhuang, H., Garrote, E., Yu, X., Khilnani, V., Poggio, T., Steele, A. D., & Serre, T. (2010). Automated home-cage behavioural phenotyping of mice. Nature communications, 1(1), 1-10.
 * [Piotr's toolbox](https://pdollar.github.io/toolbox/) - used for reading/writing `.seq` files (and a version of this release is included in the `./toolbox-master` subfolder).
 * [Dual TVL1 Optical Flow](https://github.com/vinthony/Dual_TVL1_Optical_Flow) - used to estimate TV-L1 optical flow and create temporal frames
+* [CRIM13 dataset](https://data.caltech.edu/records/1892) - used in the preprint (but not the example projects)
 
 <a name="release_notes"></a>
 ## Release notes
