@@ -326,7 +326,6 @@ classdef DeepActionProject
                             fprintf('Extracting %s stream from video %s: ', streams{i}, vidNames{j})
                         end
                         feat.ExtractFeatures()
-                        fprintf('\n')
                     end
                 end
             end
