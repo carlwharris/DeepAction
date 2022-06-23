@@ -1,7 +1,5 @@
-function self = LaunchAnnotator(self)
+function LaunchAnnotator(self)
+
 self.BackupAnnotations()
-Annotator(self)
-%             clipTPath = fullfile(self.ProjectPath, 'annotations', 'AnnotatorClipTable.mat');
-%             s = load(clipTPath, 'AnnotatorClipTable');
-%             self.ClipTable = s.ClipTable;
+Annotator(self);
 end

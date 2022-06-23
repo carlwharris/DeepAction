@@ -49,8 +49,9 @@ classdef DeepActionProject
         GenerateRICAModel(self)
 
         % GUI
-        self = LaunchAnnotator(self)
+        LaunchAnnotator(self)
         UpdateAnnotationsFromClipTable(self, varargin)
+        self = RefreshClipTable(self)
     
         % Get & load available data
         videoNames = GetVideoNames(self, varargin)

@@ -1,5 +1,5 @@
 function ExportAnnotations(self)
-revPath = fullfile(self.ProjectPath, 'review.mat');
+revPath = fullfile(self.ProjectPath, 'annotations', 'ClipTable.mat');
 load(revPath, 'ClipTable');
 
 uniqueVideos = unique(ClipTable.Video);
