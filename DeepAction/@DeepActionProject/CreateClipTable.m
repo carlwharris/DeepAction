@@ -60,14 +60,14 @@ end
 self.ClipTable = removevars(clipT, 'Indices');
 
 verboseLvl = self.ConfigFile.GetParams('VerboseLevel');
-
-if verboseLvl > 0
-    tmpLenSec = seconds(clipLength);
-    tmpLenSec.Format = 'hh:mm:ss';
-    fprintf('  - Created %d clips with a target length of %s (%0.0f frames on avg. with FPS of %0.1f)\n', size(clipT), char(tmpLenSec), clipLength * fps, fps)
-    fprintf('    - %d are human-annotated\n', size(annotatedT, 1))
-    fprintf('    - %d do not have human annotations\n', size(unannotatedT, 1))
-end
+% 
+% if verboseLvl > 0
+%     tmpLenSec = seconds(clipLength);
+%     tmpLenSec.Format = 'hh:mm:ss';
+%     fprintf('  - Created %d clips with a target length of %s (%0.0f frames on avg. with FPS of %0.1f)\n', size(clipT), char(tmpLenSec), clipLength * fps, fps)
+%     fprintf('    - %d are human-annotated\n', size(annotatedT, 1))
+%     fprintf('    - %d do not have human annotations\n', size(unannotatedT, 1))
+% end
 
 end
 
