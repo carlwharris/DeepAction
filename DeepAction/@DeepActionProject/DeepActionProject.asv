@@ -31,13 +31,13 @@ classdef DeepActionProject
             end
         end
 
+
         % Create project
         CreateProject(self)
 
         % Import data
         ImportVideos(self, importTable, varargin)
         ImportAnnotations(self, importTable, varargin)
-        SyncAnnotationCategories(self)
 
         % Generate frames
         GenerateFrames(self, varargin)
@@ -50,11 +50,8 @@ classdef DeepActionProject
 
         % GUI
         self = LaunchAnnotator(self)
-        UpdateAnnotationsFromClipTable(self, varargin)
     
         % Get & load available data
-        videoNames = GetVideoNames(self, varargin)
-        
         self = GetAnnotatorData(self) % For initial annotation
         self = GetClassifierData(self) % For classifier training
 
@@ -67,8 +64,6 @@ classdef DeepActionProject
         clipT = LoadFeatures(self, clipT, varargin)
         [RICAModel, path] = LoadRICAModel(self)
         clipT = LoadAnnotations(self, clipT);
-
-%         allAnnotT = LoadAllAnnotations(self) TODO
 
         % Setup data for training
         self = SplitClipData(self, varargin)
@@ -93,13 +88,24 @@ classdef DeepActionProject
         self = EvaluateConfidenceScorer(self)
 
         % Export/annotation IO        
-%         CreateLabeledVideos(self, varargin) TODO
-        CreateLabeledClips(self, varargin)
-
-        SaveResults(self, varargin)
 
         ExportAnnotations(self)
         SaveAllAnnotations(self, allAnnotT)
+
+        
+        CreateLabeledVideos(self, varargin)
+
+        
+
+        
+        SyncAnnotationCategories(self)
+        behaviors = GetAnnotationCategories(self)
+        UpdateAnnotationsFromClipTable(self, varargin)
+
+        SaveResults(self, varargin)
+
+        videoNames = GetVideoNames(self, varargin)
+
     end
 
     methods (Access = private)
