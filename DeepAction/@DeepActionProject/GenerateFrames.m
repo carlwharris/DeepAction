@@ -17,20 +17,29 @@ for i = 1:length(streams)
             innerTic = tic;
             feat = Feature(self, vidNames{j}, streams{i}, cams)
             feat.GenerateFrames(varargin{:});
-            fprintf('Video %s, stream %s extracted in %0.1f sec.\n', streams{i}, vidNames{j}, toc(innerTic))
+
+            if verboseLvl > 1
+                fprintf('Stream %s, video %s extracted in %0.1f sec.\n', streams{i}, vidNames{j}, toc(innerTic))
+            end
         end
     else
         for j = 1:length(vidNames)
             feat = Feature(self, vidNames{j}, streams{i}, cams);
    
             if verboseLvl > 1
-                fprintf('Extracting %s frames from video %s: ', streams{i}, vidNames{j})
+                fprintf('Extracting stream %s frames from video %s: ', streams{i}, vidNames{j})
             end
             feat.GenerateFrames()
-            fprintf('\n')
+
+            if verboseLvl > 1
+                fprintf('\n')
+            end
         end
+    end
+
+    if verboseLvl > 0
+        fprintf('%s stream frames generated in %0.0f sec.\n', streams{i}, toc(outerTic))
     end
 end
 
-fprintf('Frames generated in a total time of %0.0f sec.', toc(outerTic))
 end
