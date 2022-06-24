@@ -1,3 +1,15 @@
+
+<p align="center">
+  
+[![PyPi license](https://badgen.net/pypi/license/pip/)](https://pypi.com/project/pip/)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/carlwharris/DeepAction?color=brightgreen)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/carlwharris/DeepAction?color=yellow)
+![GitHub all releases](https://img.shields.io/github/downloads/carlwharris/DeepAction/total?color=orange) 
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/carlwharris/DeepAction?color=red)
+![GitHub repo size](https://img.shields.io/github/repo-size/carlwharris/DeepAction?color=blueviolet)
+[![View DeepAction on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/114060-deepaction)
+  </p>
+
 # DeepAction
 
 In this repository we provide the code and annotation GUI for DeepAction, a MATLAB toolbox for automatic annotation of animal behavior in video described in the preprint [here](https://www.biorxiv.org/content/10.1101/2022.06.20.496909v1). Our method extracts features from video and uses them to train a birectional LSTM classifier, which in addition to predicting behavior generates a confidence score for the predicted label. These confidence scores allow for the selective review and correction of ambiguous annotations while omitting unnecessary review. 
