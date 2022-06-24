@@ -52,6 +52,7 @@ classdef DeepActionProject
         LaunchAnnotator(self)
         UpdateAnnotationsFromClipTable(self, varargin)
         self = RefreshClipTable(self)
+        allAnnotT = LoadAllAnnotations(self)
     
         % Get & load available data
         videoNames = GetVideoNames(self, varargin)
@@ -69,7 +70,6 @@ classdef DeepActionProject
         [RICAModel, path] = LoadRICAModel(self)
         clipT = LoadAnnotations(self, clipT);
 
-%         allAnnotT = LoadAllAnnotations(self) TODO
 
         % Setup data for training
         self = SplitClipData(self, varargin)
