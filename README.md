@@ -3,6 +3,7 @@
 In this repository we provide the code and annotation GUI for DeepAction, a MATLAB toolbox for automatic annotation of animal behavior in video described in the preprint [here](https://www.biorxiv.org/content/10.1101/2022.06.20.496909v1). Our method extracts features from video and uses them to train a birectional LSTM classifier, which in addition to predicting behavior generates a confidence score for the predicted label. These confidence scores allow for the selective review and correction of ambiguous annotations while omitting unnecessary review. 
 
 
+
 Included in this repository is:
 
 * The code for the workflow
@@ -10,22 +11,27 @@ Included in this repository is:
 * Project method, configuration file, and GUI documentation
 * And two demonstration projects to cover the entire DeepAction pipeline
 
+
+
 <p align="center">
-<img src="./documentation/images/home_cage_50.gif" width="200">
-<img src="./documentation/images/home_cage_182.gif" width="200">
-<img src="./documentation/images/home_cage_448.gif" width="200">
+<img src="./documentation/images/home_cage_50.gif" width="175">
+<img src="./documentation/images/home_cage_182.gif" width="175">
+<img src="./documentation/images/home_cage_448.gif" width="175">
+<img src="./documentation/images/home_cage_464.gif" width="175">
 </p>
 
 <p align="center">
-<img src="./documentation/images/CRIM13S-785.gif" width="200">
-<img src="./documentation/images/CRIM13S-1785.gif" width="200">
-<img src="./documentation/images/CRIM13S-1896.gif" width="200">
+<img src="./documentation/images/CRIM13S-785.gif" width="175">
+<img src="./documentation/images/CRIM13S-1785.gif" width="175">
+<img src="./documentation/images/CRIM13S-1896.gif" width="175">
+<img src="./documentation/images/CRIM13S-2243.gif" width="175">
 </p>
 
 <p align="center">
-<img src="./documentation/images/CRIM13T-203.gif" width="200">
-<img src="./documentation/images/CRIM13T-256.gif" width="200">
-<img src="./documentation/images/CRIM13T-318.gif" width="200">
+<img src="./documentation/images/CRIM13T-203.gif" width="175">
+<img src="./documentation/images/CRIM13T-256.gif" width="175">
+<img src="./documentation/images/CRIM13T-318.gif" width="175">
+<img src="./documentation/images/CRIM13T-1166.gif" width="175">
 </p>
 
 ## Table of contents
@@ -88,6 +94,8 @@ The example data can be found via Google Drive link [here](https://drive.google.
 
 * The subfolder `project_1_videos` contains the demonstration videos that will be used in Project 1. 
 * The subfolder `project_2` contains the annotations, spatial/temporal features, and dimensionality reduction model for the entire home-cage dataset, which is used in Project 2.
+* The subfolder `example_annotations` contains the files used in the minidemonstration for converting existing annotations into a DeepAction-importable format. 
+* 
 <!--* The subfolder `full_database` contains videos and annotations from the home-cage dataset. We use this project in the Mini-demonstration below to show how pre-existing annotations can be imported into a DeepActionProject. -->
 <!--* In addition, we also include the script, `create_project_1.m`, that was used to generate `new_project_demo_data` from `full_database`. -->
 
@@ -162,6 +170,7 @@ Jhuang, H., Garrote, E., Yu, X., Khilnani, V., Poggio, T., Steele, A. D., & Serr
 * [Piotr's toolbox](https://pdollar.github.io/toolbox/) - used for reading/writing `.seq` files (and a version of this release is included in the `./toolbox-master` subfolder).
 * [Dual TVL1 Optical Flow](https://github.com/vinthony/Dual_TVL1_Optical_Flow) - used to estimate TV-L1 optical flow and create temporal frames
 * [CRIM13 dataset](https://data.caltech.edu/records/1892) - used in the preprint (but not the example projects)
+* [EZGif.com](https://ezgif.com/video-to-gif) - used to create GIF files from video
 
 <a name="release_notes"></a>
 ## Release notes
