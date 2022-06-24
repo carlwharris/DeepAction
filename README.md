@@ -117,7 +117,7 @@ In this project we provide a small number of short video clips from the home-cag
 
 
 <p align="center">
-<img src="./documentation/images/confusion_matrix.png" width="600" >
+<img src="./documentation/images/confusion_matrix.png" width="800" >
 </p>
 
 
