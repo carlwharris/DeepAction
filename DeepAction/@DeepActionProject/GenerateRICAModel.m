@@ -1,4 +1,14 @@
 function GenerateRICAModel(self)
+%GENERATERICAMODEL Creates dimensionality reduction model for features
+%   GENERATERICAMODEL(SELF) creates RICA model using the streams and cams
+%   specified in config.txt
+%
+%   If model already exists (i.e., model for specified stream + cam combo,
+%   and NUMDIMENSIONS), asks whether to overwrite
+%
+%   Method-specific config params are: NumDimensions, SamplePoints, and
+%   IterationLimit (see config_file.md)
+
 [RICAModel, path] = LoadRICAModel(self);
 
 if ~isempty(RICAModel)

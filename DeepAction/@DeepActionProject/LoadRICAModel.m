@@ -1,4 +1,10 @@
 function [RICAModel, path] = LoadRICAModel(self)
+%LOADRICAMODEL Load dimensionality reduction model if it exists
+%   [RICAMODEL, PATH] = LOADRICAMODEL(SELF) loads rica model for STREAMS,
+%   CAMERANAMES, and NUMDIMENSIONS specified in config file if it exists. 
+% 
+%   If model exists, returns ReconstructionICA object RICAMODEL and path
+%   to file PATH. If model doesn't exists, RICAMODEL and PATH are both [].
 
 modelFolder = fullfile(self.ProjectPath, 'rica_models');
 if ~isfolder(modelFolder)

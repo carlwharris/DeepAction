@@ -1,4 +1,11 @@
 function ExtractFeatures(self, varargin)
+%EXTRACTFEATURES Extracts spatial/temporal features from project frames
+%   EXTRACTFEATURES(SELF) extracts features from streams and cameras 
+%   specified by STREAMS and CAMERANAMES in config.txt
+%
+%   EXTRACTFEATURES(..., 'PARALLELIZE', TRUE) parallelizes process (by 
+%   default, not parallelized)
+
 p = inputParser;
 p.KeepUnmatched=true;
 addOptional(p, 'parallelize', false);

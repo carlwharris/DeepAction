@@ -1,4 +1,11 @@
 function GenerateFrames(self, varargin)
+%GENERATEFRAMES Generates spatial/temporal frames
+%   GENERATEFRAMES(SELF) generates frames for streams and cameras specified
+%   in the config file
+%
+%   GENERATEFRAMES(..., 'PARALLELIZE', TRUE) parallelizes the process (by
+%   default, no parallelization is used) 
+
 p = inputParser;
 p.KeepUnmatched=true;
 addOptional(p, 'parallelize', false);
