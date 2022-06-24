@@ -85,7 +85,7 @@ To demonstrate the toolbox, we run the workflow below using the home-cage datase
 To do demonstrate different facets of the toolbox, we split the demonstration into two sets. In the first, we show how to create a project, extract features, and launch the annotator. The data for this project are a series of short clips (5 minutes each), selected to decrease the time required to generate frames and features. In the second project, we guide users through training and evaluating the classifier and confidence-based review, as well as launching the confidence-review annotator. For this project we provide pre-extracted features, we well as the corresponding annotations, for all the videos in the home-cage dataset.  
 
 <p align="center">
-<img src="./documentation/images/workflow.png" width="300">
+<img src="./documentation/images/workflow.png" width="600">
 </p>
 
 ### Downloading the example datasets
@@ -95,14 +95,14 @@ The example data can be found via Google Drive link [here](https://drive.google.
 * The subfolder `project_1_videos` contains the demonstration videos that will be used in Project 1. 
 * The subfolder `project_2` contains the annotations, spatial/temporal features, and dimensionality reduction model for the entire home-cage dataset, which is used in Project 2.
 * The subfolder `example_annotations` contains the files used in the minidemonstration for converting existing annotations into a DeepAction-importable format. 
-* 
+
 <!--* The subfolder `full_database` contains videos and annotations from the home-cage dataset. We use this project in the Mini-demonstration below to show how pre-existing annotations can be imported into a DeepActionProject. -->
 <!--* In addition, we also include the script, `create_project_1.m`, that was used to generate `new_project_demo_data` from `full_database`. -->
 
-<p align="center">
-<img src="./documentation/images/gui_screenshot.png" width="400">
-</p>
 
+<p align="center">
+<img src="./documentation/images/home-cage_behaviors.png" width="600">
+</p>
 
 ### Project 1: Workflow steps #1-5 
 In this project we provide a small number of short video clips from the home-cage dataset, and demonstrate steps 1-5 on the workflow below. The file to run this is `demo_project_1.mlx` in the `examples` folder of this repository. In this script, users:
@@ -147,6 +147,10 @@ In addition, we also provide a demonstration of how to import annotations from a
 
 In the `documentation` folder, we provide markdown files containing descriptions for the [configuration files](./documentation/config.md), [GUI](./documentation/GUI.md), and [DeepAction functions](./documentation/functions.md).
 
+
+<p align="center">
+<img src="./documentation/images/gui_screenshot.png" width="600">
+</p>
 
 <a name="key_folders_files"></a>
 ## Key project folders & files
