@@ -11,7 +11,7 @@ fprintf(fileID,'  ProjectName=''%s''\n', projectName);
 fprintf(fileID,'  MultipleCameras=false\n');
 fprintf(fileID,'  CameraNames=[]\n');
 fprintf(fileID,'  PrimaryCamera=''''\n');
-fprintf(fileID,'  VerboseLevel=3\n');
+fprintf(fileID,'  VerboseLevel=2\n');
 
 fprintf(fileID,'\n[Stream]\n');
 fprintf(fileID,'  ImageType=image\n');

@@ -1,15 +1,15 @@
 classdef DeepActionProject
     properties
-        ProjectPath
-        ProjectName
-        VerboseLevel = 1
-        ConfigFile
-        ClipTable
-        Layers
-        TrainingOptions
-        Network
-        ConfidenceScorer
-        Results
+        ProjectPath % Path to project folder
+        ProjectName % Name of project
+        VerboseLevel = 2 % Level of output to display (0-2)
+        ConfigFile % ConfigFile object for project's config.txt file 
+        ClipTable % Table containing project clip data
+        Layers % Layer graph generated during classifier setup
+        TrainingOptions % Options for training RNN
+        Network % Trained RNN
+        ConfidenceScorer % ConfidenceScorer object for project
+        Results % Struct containing results of net & confidence eval.
     end
 
     methods
