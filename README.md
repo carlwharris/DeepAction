@@ -14,14 +14,18 @@ Included in this repository is:
 <img src="./documentation/images/home_cage_50.gif" width="200">
 <img src="./documentation/images/home_cage_182.gif" width="200">
 <img src="./documentation/images/home_cage_448.gif" width="200">
-<img src="./documentation/images/home_cage_464.gif" width="200">
 </p>
 
 <p align="center">
 <img src="./documentation/images/CRIM13S-785.gif" width="200">
 <img src="./documentation/images/CRIM13S-1785.gif" width="200">
 <img src="./documentation/images/CRIM13S-1896.gif" width="200">
-<img src="./documentation/images/CRIM13S-2243.gif" width="200">
+</p>
+
+<p align="center">
+<img src="./documentation/images/CRIM13T-203.gif" width="200">
+<img src="./documentation/images/CRIM13T-256.gif" width="200">
+<img src="./documentation/images/CRIM13T-318.gif" width="200">
 </p>
 
 ## Table of contents
