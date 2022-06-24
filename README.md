@@ -3,8 +3,7 @@
   
 [![PyPi license](https://badgen.net/pypi/license/pip/)](https://pypi.com/project/pip/)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/carlwharris/DeepAction?color=brightgreen)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/carlwharris/DeepAction?color=yellow)
-![GitHub all releases](https://img.shields.io/github/downloads/carlwharris/DeepAction/total?color=orange) 
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/carlwharris/DeepAction?color=yellow)<!--![GitHub all releases](https://img.shields.io/github/downloads/carlwharris/DeepAction/total?color=orange) -->
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/carlwharris/DeepAction?color=red)
 ![GitHub repo size](https://img.shields.io/github/repo-size/carlwharris/DeepAction?color=blueviolet)
 [![View DeepAction on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/114060-deepaction)
