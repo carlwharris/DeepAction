@@ -202,7 +202,7 @@ If you're interested in contributing, please reach out!
 <a name="author"></a>
 ## Author 
 
-All code, except that used in [references](#references), by Carl Harris (email: carlwharris1 at gmail).
+All code, except that used in [references](#references), by Carl Harris (email: carlwharris1 at gmail; [website](https://carlwharris.github.io/); [GitHub](https://github.com/carlwharris))
 
 <a name="license"></a>
 ## License
