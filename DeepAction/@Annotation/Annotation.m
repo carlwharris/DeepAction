@@ -49,7 +49,7 @@ classdef Annotation
         
         Save(self)
 
-        GetTimeStamps(self)
+        ts = GetTimeStamps(self)
         
         self = Load(self, varargin)
 
