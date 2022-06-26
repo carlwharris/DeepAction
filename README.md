@@ -1,19 +1,23 @@
+<div class="container" >
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/carlwharris/DeepAction?color=blue"></a>
+  <a href="#"><img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/carlwharris/DeepAction?color=brightgreen"></a>
+  <a href="#"><img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/carlwharris/DeepAction?color=yellow"></a>
+  <a href="#"><img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/carlwharris/DeepAction?color=red"></a>
+  <a href="#"><img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/carlwharris/DeepAction?color=blueviolet"></a>
+  <a href="https://www.mathworks.com/matlabcentral/fileexchange/114060-deepaction"><img src="https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg"></a>
+</p>
+</div>  
 
 <p align="center">
-  
-[![PyPi license](https://badgen.net/pypi/license/pip/)](https://pypi.com/project/pip/)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/carlwharris/DeepAction?color=brightgreen)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/carlwharris/DeepAction?color=yellow)<!--![GitHub all releases](https://img.shields.io/github/downloads/carlwharris/DeepAction/total?color=orange) -->
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/carlwharris/DeepAction?color=red)
-![GitHub repo size](https://img.shields.io/github/repo-size/carlwharris/DeepAction?color=blueviolet)
-[![View DeepAction on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/114060-deepaction)
-  </p>
+  <a href="https://www.biorxiv.org/content/10.1101/2022.06.20.496909v1">  
+    <img align="center" src="https://www.biorxiv.org/sites/default/files/site_logo/bioRxiv_logo_homepage.png" style="width:100px">
+  </a>
+</p>
 
 # DeepAction
 
-In this repository we provide the code and annotation GUI for DeepAction, a MATLAB toolbox for automatic annotation of animal behavior in video described in the preprint [here](https://www.biorxiv.org/content/10.1101/2022.06.20.496909v1). Our method extracts features from video and uses them to train a birectional LSTM classifier, which in addition to predicting behavior generates a confidence score for the predicted label. These confidence scores allow for the selective review and correction of ambiguous annotations while omitting unnecessary review. 
-
-
+In this repository we provide the code and annotation GUI for DeepAction, a MATLAB toolbox for automatic annotation of animal behavior in video described in the [preprint](https://www.biorxiv.org/content/10.1101/2022.06.20.496909v1). Our method extracts features from video and uses them to train a birectional LSTM classifier, which in addition to predicting behavior generates a confidence score for the predicted label. These confidence scores allow for the selective review and correction of ambiguous annotations while omitting unnecessary review. 
 
 Included in this repository is:
 
@@ -68,7 +72,6 @@ All this is required to begin using DeepAction is to add the toolbox folder to y
 ```
 addpath(genpath(toolbox_folder));
 savepath;
-
 ```
 
 where `toolbox_folder` is the path to the toolbox repository. The command `savepath` saves the current search path so the toolbox doesn't need to be added to the path each time a new MATLAB instance is opened. Don't include it if this is not desirable.
