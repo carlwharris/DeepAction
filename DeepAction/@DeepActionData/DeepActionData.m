@@ -11,6 +11,13 @@ classdef DeepActionData < DeepActionProject
             self = self@DeepActionProject(projectPath)
         end
         
+        self = CreateClipTable(self, varargin)
+        status = GetFeatureIndices(self)
+        status = GetAnnotationIndices(self)
+
+        self = LoadData(self, varargin)
+        clipT = LoadFeatures(self, clipT)
+        clipT = LoadAnnotations(self, clipT)
     end
 end
 
