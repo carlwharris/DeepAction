@@ -207,6 +207,18 @@ If you're interested in contributing, please reach out!
 
 All code, except that used in [references](#references), by Carl Harris (email: carlwharris1 at gmail; [website](https://carlwharris.github.io/); [GitHub](https://github.com/carlwharris))
 
+If you use this toolbox in your work, we ask that you cite the   <a href="https://www.biorxiv.org/content/10.1101/2022.06.20.496909v1"> original paper</a>:
+
+```
+@article{harris2022deepaction,
+  title={DeepAction: A MATLAB toolbox for automated classification of animal behavior in video},
+  author={Harris, Carl W and Finn, Kelly R and Peter, U Tse},
+  journal={bioRxiv},
+  year={2022},
+  publisher={Cold Spring Harbor Laboratory}
+}
+```
+
 <a name="license"></a>
 ## License
 
