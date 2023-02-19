@@ -213,12 +213,15 @@ All code, except that used in [references](#references), by Carl Harris (email: 
 If you use this toolbox in your work, we ask that you cite the   <a href="https://www.biorxiv.org/content/10.1101/2022.06.20.496909v1"> original paper</a>:
 
 ```
-@article{harris2022deepaction,
+@article{harris2023deepaction,
   title={DeepAction: A MATLAB toolbox for automated classification of animal behavior in video},
-  author={Harris, Carl W and Finn, Kelly R and Peter, U Tse},
-  journal={bioRxiv},
-  year={2022},
-  publisher={Cold Spring Harbor Laboratory}
+  author={Harris, Carl and Finn, Kelly R and Kieseler, Marie-Luise and Maechler, Marvin R and Tse, Peter U},
+  journal={Scientific Reports},
+  volume={13},
+  number={1},
+  pages={2688},
+  year={2023},
+  publisher={Nature Publishing Group UK London}
 }
 ```
 
