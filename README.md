@@ -10,8 +10,11 @@
 </div>  
 
 <p align="center">
+  <a href="https://www.nature.com/articles/s41598-023-29574-0">  
+    <img align="center" src="https://neuroptics.com/wp-content/uploads/2018/05/NSR_1.png" style="height:2em;">
+  </a>
   <a href="https://www.biorxiv.org/content/10.1101/2022.06.20.496909v1">  
-    <img align="center" src="https://www.biorxiv.org/sites/default/files/site_logo/bioRxiv_logo_homepage.png" style="width:100px">
+    <img align="center" src="https://www.biorxiv.org/sites/default/files/site_logo/bioRxiv_logo_homepage.png" style="height:2em">
   </a>
 </p>
 
